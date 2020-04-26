@@ -8,15 +8,17 @@ export default function AddToOrder() {
   autorun(() => {
     wrapper.innerHTML = `
       <h2>Add to order ✏️</h2>
-      <div class="select">
-        <select style="width: 7em" value="">
-          ${items.map(
-            (item) => `<option value="${item.name}">${item.name}</option>`,
-          )}
-        </select>
+      <div class="input-row">
+        <div class="select">
+          <select value="">
+            ${items.map(
+              (item) => `<option value="${item.name}">${item.name}</option>`,
+            )}
+          </select>
+        </div>
+        <input class="input" type="number" value="1" placeholder="Num"/>
+        <button class="button is-primary">Add to order</button>
       </div>
-      <input class="input" type="number" style="width: 4em" value="1" placeholder="Num"/>
-      <button class="button is-primary">Add to order</button>
     `
   })
 

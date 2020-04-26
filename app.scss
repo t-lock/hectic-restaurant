@@ -49,3 +49,24 @@ table {
 form {
   margin-bottom: 20px;
 }
+
+.input-row {
+  display: flex;
+
+  input,
+  .select {
+    margin-right: 5px;
+  }
+
+  input:first-child,
+  .select:first-child {
+    flex-grow: 1;
+    select {
+      width: 100%;
+    }
+  }
+
+  input:nth-child(2) {
+    max-width: 75px;
+  }
+}

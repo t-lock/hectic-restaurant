@@ -6,9 +6,11 @@ export default function AddToMenu() {
 
   const template = `
     <h2>Add new item to menu 👨‍🍳</h2>
-    <input class="input" type="text" style="width: 7em" value="" placeholder="Name" />
-    <input class="input" type="number" style="width: 4em" placeholder="Price" value="" />
-    <button class="button is-primary">Add to order</button>
+    <div class="input-row">
+      <input class="input" type="text" value="" placeholder="Name" />
+      <input class="input" type="number" placeholder="Price" value="" />
+      <button class="button is-primary">Add to menu</button>
+    </div>
   `
   wrapper.innerHTML = template
 
