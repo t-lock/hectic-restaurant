@@ -1,0 +1,5 @@
+# Hectic Restaurant 👨‍🍳⏱️
+
+```
+yarn start
+```
