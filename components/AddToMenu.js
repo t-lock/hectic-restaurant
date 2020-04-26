@@ -7,7 +7,7 @@ export default function AddToMenu() {
   const tickers = document.getElementById('tickers')
 
   const template = `
-    <h2>Add new item to menu 👨‍🍳</h2>
+    <h3>Add new item to menu 👨‍🍳</h3>
     <div class="input-row">
       <input class="input" type="text" value="" placeholder="Name" />
       <!--<input class="input" type="number" placeholder="Price" value="" />-->
@@ -25,6 +25,7 @@ export default function AddToMenu() {
     if (items.find((item) => item.name === name)) {
       alert("Clever, but no. That's already on the menu.")
     } else {
+      wrapper.querySelector('input[type=text]').value = ''
       items.push({ name, price })
       tickers.appendChild(
         Ticker(appState.items.find((item) => item.name === name)),

@@ -38,12 +38,16 @@ h2 {
   font-size: 1.5rem;
   font-weight: 600;
 }
+h3 {
+  font-size: 1.2rem;
+  font-weight: 600;
+}
 
 table {
   width: 100%;
   text-align: left;
   border-collapse: collapse;
-  margin-bottom: 20px;
+  margin-bottom: 10px;
 
   th,
   td {
@@ -64,7 +68,7 @@ table {
 }
 
 form {
-  margin-bottom: 20px;
+  margin-bottom: 30px;
 }
 
 .input-row {

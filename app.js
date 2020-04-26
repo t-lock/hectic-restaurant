@@ -66,9 +66,9 @@ export let appState = observable({
 // mount
 const app = document.getElementById('app')
 app.appendChild(Menu())
+app.appendChild(AddToMenu())
 app.appendChild(DisplayOrder())
 app.appendChild(AddToOrder())
-app.appendChild(AddToMenu())
 
 const tickers = document.getElementById('tickers')
 appState.items.forEach((item) => tickers.appendChild(Ticker(item)))

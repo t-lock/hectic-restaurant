@@ -7,7 +7,7 @@ export default function AddToOrder() {
 
   autorun(() => {
     wrapper.innerHTML = `
-      <h2>Add to order ✏️</h2>
+      <h3>Add to order ✏️</h3>
       <div class="input-row">
         <div class="select">
           <select value="">
